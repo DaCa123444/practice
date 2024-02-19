@@ -8,7 +8,8 @@
 		/joint_state; sub obj	 : auto (by rsp.cpp)
 		/rob_description; pub obj	: auto (rsp.cpp)
 
-
+		/img ; ps 
+		/src ; rsp.cpp
 # branch Lv2. rsp & gazebo
 		
 		rsp launch

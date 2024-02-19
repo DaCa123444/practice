@@ -28,7 +28,7 @@ def generate_launch_description():
         package='robot_state_publisher',
         executable='robot_state_publisher',
         output='screen',
-        parameters=[params]	# 2개의 파라미터가 사용되었으며, sim은 실행이 안되어 적용x, 로봇 설명서는 출력으로 사용됨
+        parameters=[params]	# 2 params
     )
 
 
