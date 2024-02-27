@@ -1,0 +1,24 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 30
+    use_sim_time: true
+# 업데이트 속도 및 시뮬레이션 시간 사용
+
+#컨트롤러	1. 차량속도 컨트롤러
+#			2. 조인트 상태 송출기
+
+    forward_position_controller:
+      type: forward_command_controller/ForwardCommandController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+#컨트롤러 상세정보 정의
+
+forward_position_controller:
+  ros__parameters:
+    joints:
+      - joint0
+      - joint1
+      - joint3
+    interface_name: position
